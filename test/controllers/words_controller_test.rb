@@ -18,7 +18,7 @@ class WordsControllerTest < ActionController::TestCase
 
   test "should create word" do
     assert_difference('Word.count') do
-      post :create, word: { details: @word.details, text: @word.text }
+      post :create, word: { description: @word.description, languaje_id: @word.languaje_id, text: @word.text }
     end
 
     assert_redirected_to word_path(assigns(:word))
@@ -35,7 +35,7 @@ class WordsControllerTest < ActionController::TestCase
   end
 
   test "should update word" do
-    patch :update, id: @word, word: { details: @word.details, text: @word.text }
+    patch :update, id: @word, word: { description: @word.description, languaje_id: @word.languaje_id, text: @word.text }
     assert_redirected_to word_path(assigns(:word))
   end
 

@@ -4,7 +4,8 @@
   <thead>
     <tr>
       <th>Text</th>
-      <th>Details</th>
+      <th>Description</th>
+      <th>Languaje</th>
       <th></th>
       <th></th>
       <th></th>
@@ -15,7 +16,8 @@
     <% @words.each do |word| %>
       <tr>
         <td><%= word.text %></td>
-        <td><%= word.details %></td>
+        <td><%= word.description %></td>
+        <td><%= word.languaje_id %></td>
         <td><%= link_to 'Show', word %></td>
         <td><%= link_to 'Edit', edit_word_path(word) %></td>
         <td><%= link_to 'Destroy', word, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -11,58 +11,74 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141026124020) do
+ActiveRecord::Schema.define(version: 20141029190141) do
 
-  create_table "comentarios", force: true do |t|
-    t.string   "texto"
+  create_table "aceptions", force: true do |t|
+    t.integer  "sequencial"
+    t.string   "text"
+    t.text     "description"
+    t.integer  "word_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "etiqueta", force: true do |t|
-    t.string   "texto"
-    t.integer  "tipo"
+  create_table "dictionaries", force: true do |t|
+    t.string   "title"
+    t.integer  "difficulty"
+    t.integer  "access"
+    t.integer  "user_id"
+    t.integer  "languaje_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "idioma_txts", force: true do |t|
-    t.string   "texto"
+  create_table "labels", force: true do |t|
+    t.string   "text"
+    t.integer  "type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "idiomas", force: true do |t|
-    t.integer  "IdiomaTxt_Id"
+  create_table "languajes", force: true do |t|
+    t.string   "text"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "palabras", force: true do |t|
+  create_table "translations", force: true do |t|
     t.string   "texto"
-    t.integer  "Idioma_Id"
-    t.text     "explicacion"
+    t.text     "description"
+    t.integer  "aception_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "urls", force: true do |t|
-    t.string   "direccion"
+    t.string   "address"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "usuarios", force: true do |t|
-    t.string   "nombre"
+  create_table "users", force: true do |t|
+    t.string   "name"
     t.string   "user"
     t.string   "pass"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  create_table "versions", force: true do |t|
+    t.integer  "number"
+    t.integer  "status"
+    t.integer  "dictionary_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "words", force: true do |t|
     t.string   "text"
-    t.text     "details"
+    t.text     "description"
+    t.integer  "languaje_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

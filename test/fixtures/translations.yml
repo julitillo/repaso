@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  texto: MyString
+  description: MyText
+  aception_id: 1
+  aception_id: 1
+
+two:
+  texto: MyString
+  description: MyText
+  aception_id: 1
+  aception_id: 1

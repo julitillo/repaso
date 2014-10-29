@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Sequencial:</strong>
+  <%= @aception.sequencial %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @aception.text %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @aception.description %>
+</p>
+
+<p>
+  <strong>Word:</strong>
+  <%= @aception.word_id %>
+</p>
+
+<%= link_to 'Edit', edit_aception_path(@aception) %> |
+<%= link_to 'Back', aceptions_path %>
