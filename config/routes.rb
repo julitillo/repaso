@@ -1,4 +1,6 @@
 Repaso::Application.routes.draw do
+  resources :tests
+
   resources :versions
 
   resources :dictionaries
@@ -9,7 +11,7 @@ Repaso::Application.routes.draw do
 
   resources :words
 
-  resources :languajes
+  resources :languages
 
   resources :users
 

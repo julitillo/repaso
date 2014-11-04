@@ -5,8 +5,8 @@ class CreateDictionaries < ActiveRecord::Migration
       t.integer :difficulty
       t.integer :access
       t.integer :user_id
-      t.integer :languaje_id
-      t.integer :languaje_id
+      t.integer :language_id_own
+      t.integer :language_id_for
 
       t.timestamps
     end

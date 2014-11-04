@@ -69,6 +69,6 @@ class AceptionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def aception_params
-      params.require(:aception).permit(:sequencial, :text, :description, :word_id)
+      params.require(:aception).permit(:sequencial, :name, :description, :word_id)
     end
 end

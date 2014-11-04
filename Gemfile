@@ -10,6 +10,10 @@ group :development do
   gem 'sqlite3'#, '1.3.5'
 end
 
+group :production do
+  gem 'pg'#, '0.12.2'
+end
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -48,6 +52,3 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-group :production do
-  #gem 'pg', '0.12.2'
-end

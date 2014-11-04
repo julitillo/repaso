@@ -69,6 +69,6 @@ class WordsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def word_params
-      params.require(:word).permit(:text, :description, :languaje_id)
+      params.require(:word).permit(:name, :description, :language_id)
     end
 end

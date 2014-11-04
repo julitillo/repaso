@@ -4,7 +4,7 @@
   <thead>
     <tr>
       <th>Sequencial</th>
-      <th>Text</th>
+      <th>Name</th>
       <th>Description</th>
       <th>Word</th>
       <th></th>
@@ -17,7 +17,7 @@
     <% @aceptions.each do |aception| %>
       <tr>
         <td><%= aception.sequencial %></td>
-        <td><%= aception.text %></td>
+        <td><%= aception.name %></td>
         <td><%= aception.description %></td>
         <td><%= aception.word_id %></td>
         <td><%= link_to 'Show', aception %></td>

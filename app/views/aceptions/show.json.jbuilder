@@ -1,1 +1,1 @@
-json.extract! @aception, :id, :sequencial, :text, :description, :word_id, :created_at, :updated_at
+json.extract! @aception, :id, :sequencial, :name, :description, :word_id, :created_at, :updated_at

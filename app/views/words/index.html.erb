@@ -3,9 +3,9 @@
 <table>
   <thead>
     <tr>
-      <th>Text</th>
+      <th>Name</th>
       <th>Description</th>
-      <th>Languaje</th>
+      <th>Language</th>
       <th></th>
       <th></th>
       <th></th>
@@ -15,9 +15,9 @@
   <tbody>
     <% @words.each do |word| %>
       <tr>
-        <td><%= word.text %></td>
+        <td><%= word.name %></td>
         <td><%= word.description %></td>
-        <td><%= word.languaje_id %></td>
+        <td><%= word.language_id %></td>
         <td><%= link_to 'Show', word %></td>
         <td><%= link_to 'Edit', edit_word_path(word) %></td>
         <td><%= link_to 'Destroy', word, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -11,11 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141029190141) do
+ActiveRecord::Schema.define(version: 20141102104345) do
 
   create_table "aceptions", force: true do |t|
     t.integer  "sequencial"
-    t.string   "text"
+    t.string   "name"
     t.text     "description"
     t.integer  "word_id"
     t.datetime "created_at"
@@ -27,27 +27,36 @@ ActiveRecord::Schema.define(version: 20141029190141) do
     t.integer  "difficulty"
     t.integer  "access"
     t.integer  "user_id"
-    t.integer  "languaje_id"
+    t.integer  "language_id_own"
+    t.integer  "language_id_for"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "labels", force: true do |t|
-    t.string   "text"
+    t.string   "name"
     t.integer  "type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "languajes", force: true do |t|
-    t.string   "text"
+  create_table "languages", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tests", force: true do |t|
+    t.integer  "user_id"
+    t.string   "name"
+    t.integer  "dictionary_id"
+    t.datetime "date_start"
+    t.datetime "date_end"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   create_table "translations", force: true do |t|
-    t.string   "texto"
-    t.text     "description"
     t.integer  "aception_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -76,9 +85,9 @@ ActiveRecord::Schema.define(version: 20141029190141) do
   end
 
   create_table "words", force: true do |t|
-    t.string   "text"
+    t.string   "name"
     t.text     "description"
-    t.integer  "languaje_id"
+    t.integer  "language_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

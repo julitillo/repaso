@@ -18,7 +18,7 @@ class AceptionsControllerTest < ActionController::TestCase
 
   test "should create aception" do
     assert_difference('Aception.count') do
-      post :create, aception: { description: @aception.description, sequencial: @aception.sequencial, text: @aception.text, word_id: @aception.word_id }
+      post :create, aception: { description: @aception.description, name: @aception.name, sequencial: @aception.sequencial, word_id: @aception.word_id }
     end
 
     assert_redirected_to aception_path(assigns(:aception))
@@ -35,7 +35,7 @@ class AceptionsControllerTest < ActionController::TestCase
   end
 
   test "should update aception" do
-    patch :update, id: @aception, aception: { description: @aception.description, sequencial: @aception.sequencial, text: @aception.text, word_id: @aception.word_id }
+    patch :update, id: @aception, aception: { description: @aception.description, name: @aception.name, sequencial: @aception.sequencial, word_id: @aception.word_id }
     assert_redirected_to aception_path(assigns(:aception))
   end
 

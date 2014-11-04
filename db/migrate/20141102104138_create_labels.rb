@@ -1,7 +1,7 @@
 class CreateLabels < ActiveRecord::Migration
   def change
     create_table :labels do |t|
-      t.string :text
+      t.string :name
       t.integer :type
 
       t.timestamps

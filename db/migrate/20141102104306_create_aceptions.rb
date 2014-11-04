@@ -2,7 +2,7 @@ class CreateAceptions < ActiveRecord::Migration
   def change
     create_table :aceptions do |t|
       t.integer :sequencial
-      t.string :text
+      t.string :name
       t.text :description
       t.integer :word_id
 

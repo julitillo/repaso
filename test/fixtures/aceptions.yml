@@ -1,13 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  sequencial: 1
-  text: MyString
-  description: MyText
+  sequencial: 
+  name: 
+  description: 
   word_id: 1
 
 two:
-  sequencial: 1
-  text: MyString
-  description: MyText
+  sequencial: 
+  name: 
+  description: 
   word_id: 1

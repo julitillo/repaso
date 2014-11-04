@@ -18,7 +18,7 @@ class DictionariesControllerTest < ActionController::TestCase
 
   test "should create dictionary" do
     assert_difference('Dictionary.count') do
-      post :create, dictionary: { access: @dictionary.access, difficulty: @dictionary.difficulty, languaje_id: @dictionary.languaje_id, languaje_id: @dictionary.languaje_id, title: @dictionary.title, user_id: @dictionary.user_id }
+      post :create, dictionary: { access: @dictionary.access, difficulty: @dictionary.difficulty, language_id_for: @dictionary.language_id_for, language_id_own: @dictionary.language_id_own, title: @dictionary.title, user_id: @dictionary.user_id }
     end
 
     assert_redirected_to dictionary_path(assigns(:dictionary))
@@ -35,7 +35,7 @@ class DictionariesControllerTest < ActionController::TestCase
   end
 
   test "should update dictionary" do
-    patch :update, id: @dictionary, dictionary: { access: @dictionary.access, difficulty: @dictionary.difficulty, languaje_id: @dictionary.languaje_id, languaje_id: @dictionary.languaje_id, title: @dictionary.title, user_id: @dictionary.user_id }
+    patch :update, id: @dictionary, dictionary: { access: @dictionary.access, difficulty: @dictionary.difficulty, language_id_for: @dictionary.language_id_for, language_id_own: @dictionary.language_id_own, title: @dictionary.title, user_id: @dictionary.user_id }
     assert_redirected_to dictionary_path(assigns(:dictionary))
   end
 

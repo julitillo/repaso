@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @test.user_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @test.name %>
+</p>
+
+<p>
+  <strong>Dictionary:</strong>
+  <%= @test.dictionary_id %>
+</p>
+
+<p>
+  <strong>Date start:</strong>
+  <%= @test.date_start %>
+</p>
+
+<p>
+  <strong>Date end:</strong>
+  <%= @test.date_end %>
+</p>
+
+<%= link_to 'Edit', edit_test_path(@test) %> |
+<%= link_to 'Back', tests_path %>

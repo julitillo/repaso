@@ -1,17 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  difficulty: 1
-  access: 1
-  user_id: 1
-  languaje_id: 1
-  languaje_id: 1
+  title: 
+  difficulty: 
+  access: 
+  user_id: 
+  language_id_own: 
+  language_id_for: 1
 
 two:
-  title: MyString
-  difficulty: 1
-  access: 1
-  user_id: 1
-  languaje_id: 1
-  languaje_id: 1
+  title: 
+  difficulty: 
+  access: 
+  user_id: 
+  language_id_own: 
+  language_id_for: 1

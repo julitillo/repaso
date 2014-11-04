@@ -1,1 +1,1 @@
-json.extract! @translation, :id, :texto, :description, :aception_id, :aception_id, :created_at, :updated_at
+json.extract! @translation, :id, :aception_id, :aception_id, :created_at, :updated_at
