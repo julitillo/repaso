@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20141102104345) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "aceptions", force: true do |t|
     t.integer  "sequencial"
     t.string   "name"
